@@ -1,0 +1,9 @@
+Shipment_ID,Origin,Destination,Distance_km,Delivery_Time_hr,Inventory_Units,Shipping_Cost,Status
+S001,Delhi,Chandigarh,250,6.2,120.0,4800,Delivered
+S002,Ludhiana,Delhi,310,7.4,85.0,5200,Delivered
+S003,Chandigarh,Jaipur,510,,60.0,7900,Delayed
+S004,Delhi,Amritsar,450,9.1,95.0,7100,Delivered
+S005,Jaipur,Delhi,270,5.8,110.0,5000,In Transit
+S006,Delhi,Mumbai,1400,28.0,70.0,16500,Delivered
+S006,Delhi,Mumbai,1400,28.0,70.0,16500,Delivered
+S007,Amritsar,Delhi,450,10.5,,7300,Delayed
