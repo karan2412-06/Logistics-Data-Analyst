@@ -1,48 +1,94 @@
-# Week 2 – Logistics Data Collection, Cleaning and Preprocessing
+# Advanced Data Analysis and Visualization in Logistics
 
-This GitHub project documents the Week 2 internship task for logistics data analysis.
+## Internship – Week 3
 
-## Objective
-Prepare a simulated logistics dataset for analysis by:
-- inspecting the raw data
-- identifying missing values and duplicate records
-- handling missing numerical values
-- detecting potential outliers using the IQR method
-- normalizing selected numerical features
-- validating the cleaned dataset
+This project focuses on exploratory data analysis and visualization of logistics operations using Python.
 
-## Tools
-Python, Pandas, NumPy, Scikit-learn.
+### Objective
 
-## Structure
+The project analyzes shipment activity, delivery performance, transportation cost, product categories, regions, and transportation modes. The goal is to turn raw logistics records into clear findings that can support operational decision-making.
+
+### Tools Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
+### Project Structure
+
 ```text
-week2-logistics-data-preprocessing/
+logistics-data-analysis/
+│
 ├── data/
 │   └── logistics_data.csv
-├── src/
-│   └── data_preprocessing.py
+│
 ├── notebooks/
-│   └── week2_preprocessing.ipynb
-├── reports/
-│   └── Week_2_Logistics_Data_Preprocessing_Report.docx
+│   └── logistics_analysis.ipynb
+│
+├── src/
+│   └── logistics_analysis.py
+│
+├── visualizations/
+│   ├── shipments_by_region.png
+│   ├── delivery_trend.png
+│   ├── product_category.png
+│   ├── mode_cost.png
+│   └── correlation_heatmap.png
+│
+├── report/
+│   └── Week_3_Advanced_Data_Analysis_Logistics_Internship_Report.docx
+│
 ├── requirements.txt
-├── PROJECT_NOTES.md
-├── .gitignore
 └── README.md
 ```
 
-## Run the project
+## Analysis Covered
+
+1. Dataset understanding
+2. Data-quality checks
+3. Missing-value handling
+4. Date conversion and feature creation
+5. Descriptive statistics
+6. Central tendency
+7. Shipment distributions
+8. Regional analysis
+9. Product-category analysis
+10. Transportation-mode analysis
+11. Delivery-time trends
+12. Correlation analysis
+13. Visualization and interpretation
+14. Logistics bottlenecks
+15. Recommendations
+
+## Main Questions
+
+- Which regions handle the highest shipment volume?
+- How does delivery time change over time?
+- Which product categories contribute most to shipment activity?
+- How do transportation modes differ in average cost?
+- Which numerical variables are strongly related?
+- What operational areas may require attention?
+
+## How to Run
+
 ```bash
 pip install -r requirements.txt
-python src/data_preprocessing.py
+python src/logistics_analysis.py
 ```
 
-The processed dataset will be saved in `data/processed/`.
+For notebook-based analysis:
 
-## Methods Used
-1. Duplicate removal using Pandas.
-2. Missing numerical values handled with the median.
-3. Potential shipping-cost outliers flagged using the IQR method.
-4. Selected numerical features normalized using Min-Max scaling.
+```bash
+jupyter notebook notebooks/logistics_analysis.ipynb
+```
 
-The dataset is simulated for educational/internship purposes and contains no confidential information.
+## Note
+
+The dataset included in this repository is a structured sample dataset created for the internship task. It is intended to demonstrate the complete analytical workflow and can be replaced with an organization's actual logistics dataset.
+
+## Author
+
+Karan Singh
